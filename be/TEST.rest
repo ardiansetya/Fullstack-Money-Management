@@ -1,0 +1,104 @@
+POST http://localhost:2000/auth/register
+Content-Type: application/json
+
+{
+   "name": "michelle",
+   "email": "michelle123@gmail.com",
+   "password": "michelle123123"
+}
+
+###
+POST http://localhost:2000/auth/login
+Content-Type: application/json
+
+{
+   "email": "michelle123@gmail.com",
+   "password": "michelle123123"
+}
+
+###
+
+GET http://localhost:2000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIzN2VjOGQzLTcwOTItNDVmMi1iMjQyLTgyYzNjNjkxMTRkYiIsImlhdCI6MTczMTgyMDc3MCwiZXhwIjoxNzMxODI0MzcwfQ.inZPSXPhLXjXYJ0I5u_w2r0ar-Vt9w4QVG8-yMbRTo0
+
+###
+POST http://localhost:2000/api/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIzN2VjOGQzLTcwOTItNDVmMi1iMjQyLTgyYzNjNjkxMTRkYiIsImlhdCI6MTczMTgyMDc3MCwiZXhwIjoxNzMxODI0MzcwfQ.inZPSXPhLXjXYJ0I5u_w2r0ar-Vt9w4QVG8-yMbRTo0
+
+{
+   "name": "michelle",
+   "email": "michelle@gmail.com",
+   "password" : "michelle123"
+}
+
+###
+PUT http://localhost:2000/api/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIzN2VjOGQzLTcwOTItNDVmMi1iMjQyLTgyYzNjNjkxMTRkYiIsImlhdCI6MTczMTgyMDc3MCwiZXhwIjoxNzMxODI0MzcwfQ.inZPSXPhLXjXYJ0I5u_w2r0ar-Vt9w4QVG8-yMbRTo0
+
+{
+
+}
+
+###
+DELETE http://localhost:2000/api/category/{id}
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIzN2VjOGQzLTcwOTItNDVmMi1iMjQyLTgyYzNjNjkxMTRkYiIsImlhdCI6MTczMTgyMDc3MCwiZXhwIjoxNzMxODI0MzcwfQ.inZPSXPhLXjXYJ0I5u_w2r0ar-Vt9w4QVG8-yMbRTo0
+
+
+
+# CATEGORY
+
+###
+GET http://localhost:2000/api/categories
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIzN2VjOGQzLTcwOTItNDVmMi1iMjQyLTgyYzNjNjkxMTRkYiIsImlhdCI6MTczMTgyMDc3MCwiZXhwIjoxNzMxODI0MzcwfQ.inZPSXPhLXjXYJ0I5u_w2r0ar-Vt9w4QVG8-yMbRTo0
+
+###
+POST http://localhost:2000/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIzN2VjOGQzLTcwOTItNDVmMi1iMjQyLTgyYzNjNjkxMTRkYiIsImlhdCI6MTczMTgyMDc3MCwiZXhwIjoxNzMxODI0MzcwfQ.inZPSXPhLXjXYJ0I5u_w2r0ar-Vt9w4QVG8-yMbRTo0
+
+{
+   "name": "salary",
+   "type": "income",
+   "userId": "30114522-ea47-4a87-87d8-1b38cba0696c"
+}
+
+###
+PUT http://localhost:2000/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIzN2VjOGQzLTcwOTItNDVmMi1iMjQyLTgyYzNjNjkxMTRkYiIsImlhdCI6MTczMTgyMDc3MCwiZXhwIjoxNzMxODI0MzcwfQ.inZPSXPhLXjXYJ0I5u_w2r0ar-Vt9w4QVG8-yMbRTo0
+
+{
+
+}
+
+###
+DELETE http://localhost:2000/api/category/{id}
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIzN2VjOGQzLTcwOTItNDVmMi1iMjQyLTgyYzNjNjkxMTRkYiIsImlhdCI6MTczMTgyMDc3MCwiZXhwIjoxNzMxODI0MzcwfQ.inZPSXPhLXjXYJ0I5u_w2r0ar-Vt9w4QVG8-yMbRTo0
+
+
+# TRANSACTION
+
+###
+GET http://localhost:2000/api/transaction
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIzN2VjOGQzLTcwOTItNDVmMi1iMjQyLTgyYzNjNjkxMTRkYiIsImlhdCI6MTczMTgyMDc3MCwiZXhwIjoxNzMxODI0MzcwfQ.inZPSXPhLXjXYJ0I5u_w2r0ar-Vt9w4QVG8-yMbRTo0
+
+###
+POST http://localhost:2000/api/transaction
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIzN2VjOGQzLTcwOTItNDVmMi1iMjQyLTgyYzNjNjkxMTRkYiIsImlhdCI6MTczMTgyMDc3MCwiZXhwIjoxNzMxODI0MzcwfQ.inZPSXPhLXjXYJ0I5u_w2r0ar-Vt9w4QVG8-yMbRTo0
+
+{
+   "userId": "30114522-ea47-4a87-87d8-1b38cba0696c",
+   "categoryId": "9c45ade7-d7e0-4dda-bce7-cbf589c89055",
+   "type": "income",
+   "amount": 3000000,
+   "description": "gaji bulanan",
+   "date": "2024-11-16T07:30:00Z"
+}
